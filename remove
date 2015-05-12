@@ -1,0 +1,27 @@
+
+  "licenses": [
+    {
+      "id": "odc-pddl",
+      "name": "Public Domain Dedication and License",
+      "version": "1.0",
+      "url": "http://opendatacommons.org/licenses/pddl/1.0/"
+    }
+  ],
+  "sources": [
+    {
+      "name": "International Organization for Standardization",
+      "web": "http://www.iso.org/iso/country_codes/iso_3166_code_lists.htm"
+    },
+    {
+      "name": "SIX Interbank Clearing Ltd (on behalf of ISO)",
+      "web": "http://www.currency-iso.org/dam/downloads/dl_iso_table_a1.xls"
+    },
+    {
+      "name": "Statoids",
+      "web": "http://www.statoids.com/wab.html"
+    }
+  ],
+  "maintainers":[{
+    "name": "Evan Wheeler",
+    "web": "https://github.com/datasets/country-codes"
+  }]

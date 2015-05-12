@@ -3,28 +3,6 @@
   "title": "Comprehensive country codes: ISO 3166, ITU, ISO 4217 currency codes and many more",
   "format": "csv",
   "datapackage_version": "1.0-beta.3",
-  "licenses": [
-    {
-      "id": "odc-pddl",
-      "name": "Public Domain Dedication and License",
-      "version": "1.0",
-      "url": "http://opendatacommons.org/licenses/pddl/1.0/"
-    }
-  ],
-  "sources": [
-    {
-      "name": "International Organization for Standardization",
-      "web": "http://www.iso.org/iso/country_codes/iso_3166_code_lists.htm"
-    },
-    {
-      "name": "SIX Interbank Clearing Ltd (on behalf of ISO)",
-      "web": "http://www.currency-iso.org/dam/downloads/dl_iso_table_a1.xls"
-    },
-    {
-      "name": "Statoids",
-      "web": "http://www.statoids.com/wab.html"
-    }
-  ],
   "resources": [
     {
       "url": "https://raw.github.com/datasets/country-codes/master/data/country-codes.csv",
@@ -32,101 +10,146 @@
       "schema": {
         "fields": [
           {
-            "name": "name",
             "description": "Country's official English short name",
-            "type": "string"
+            "type": "string",
+            "index": 0,
+            "type": "string",
+            "name": "name"
           },
           {
+            "index": 1,
             "name": "name_fr",
             "description": "Country's offical French short name",
             "type": "string"
           },
           {
+            "index": 2,
             "name": "ISO3166-1-Alpha-2",
             "description": "Alpha-2 codes from ISO 3166-1",
             "type": "string"
           },
           {
+            "index": 3,
             "name": "ISO3166-1-Alpha-3",
             "description": "Alpha-3 codes from ISO 3166-1 (synonymous with World Bank Codes)",
             "type": "string"
           },
           {
+            "index": 4,
+            "count": 249.0,
             "name": "ISO3166-1-numeric",
             "description": "Numeric codes from ISO 3166-1 (synonymous with UN Statistics M49 Codes)",
-            "type": "integer"
+            "min": 4.0,
+            "max": 894.0,
+            "50%": 434.0,
+            "25%": 218.0,
+            "std": 252.98044557381454,
+            "75%": 652.0,
+            "type": "integer",
+            "mean": 433.83534136546183
           },
           {
+            "index": 5,
             "name": "ITU",
             "description": "Codes assigned by the International Telecommunications Union",
             "type": "string"
           },
           {
+            "index": 6,
             "name": "MARC",
             "description": "MAchine-Readable Cataloging codes from the Library of Congress",
             "type": "string"
           },
           {
+            "index": 7,
             "name": "WMO",
             "description": "Country abbreviations by the World Meteorological Organization",
             "type": "string"
           },
           {
+            "index": 8,
             "name": "DS",
             "description": "Distinguishing signs of vehicles in international traffic",
             "type": "string"
           },
           {
+            "index": 9,
             "name": "Dial",
             "description": "Country code from ITU-T recommendation E.164, sometimes followed by area code",
             "type": "string"
           },
           {
+            "index": 10,
             "name": "FIFA",
             "description": "Codes assigned by the Fédération Internationale de Football Association",
             "type": "string"
           },
           {
+            "index": 11,
             "name": "FIPS",
             "description": "Codes from the U.S. standard FIPS PUB 10-4",
             "type": "string"
           },
           {
+            "index": 12,
             "name": "GAUL",
             "description": "Global Administrative Unit Layers from the Food and Agriculture Organization",
             "type": "integer"
           },
           {
+            "index": 13,
             "name": "IOC",
             "description": "Codes assigned by the International Olympics Committee",
             "type": "string"
           },
           {
+            "index": 14,
             "name": "currency_alphabetic_code",
             "description": "ISO 4217 currency alphabetic code",
             "type": "string"
           },
           {
+            "index": 15,
             "name": "currency_country_name",
             "description": "ISO 4217 country name",
             "type": "string"
           },
           {
+            "index": 16,
+            "count": 245.0,
             "name": "currency_minor_unit",
             "description": "ISO 4217 currency number of minor units",
-            "type": "integer"
+            "min": 0.0,
+            "max": 3.0,
+            "50%": 2.0,
+            "25%": 2.0,
+            "std": 0.6973399729007982,
+            "75%": 2.0,
+            "type": "number",
+            "mean": 1.7755102040816326
           },
           {
+            "index": 17,
             "name": "currency_name",
             "description": "ISO 4217 currency name",
             "type": "string"
           },
           {
+            "index": 18,
+            "count": 245.0,
             "name": "currency_numeric_code",
             "description": "ISO 4217 currency numeric code",
-            "type": "integer"
+            "min": 8.0,
+            "max": 986.0,
+            "50%": 752.0,
+            "25%": 388.0,
+            "std": 323.28437893299815,
+            "75%": 951.0,
+            "type": "number",
+            "mean": 640.2734693877551
           },
           {
+            "index": 19,
             "name": "is_independent",
             "description": "Country status, based on the CIA World Factbook",
             "type": "string"
@@ -134,9 +157,5 @@
         ]
       }
     }
-  ],
-  "maintainers":[{
-    "name": "Evan Wheeler",
-    "web": "https://github.com/datasets/country-codes"
-  }]
+  ]
 }
