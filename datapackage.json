@@ -36,17 +36,9 @@
           },
           {
             "index": 4,
-            "count": 249.0,
             "name": "ISO3166-1-numeric",
             "description": "Numeric codes from ISO 3166-1 (synonymous with UN Statistics M49 Codes)",
-            "min": 4.0,
-            "max": 894.0,
-            "50%": 434.0,
-            "25%": 218.0,
-            "std": 252.98044557381454,
-            "75%": 652.0,
-            "type": "integer",
-            "mean": 433.83534136546183
+            "type": "string"
           },
           {
             "index": 5,
@@ -116,17 +108,9 @@
           },
           {
             "index": 16,
-            "count": 245.0,
             "name": "currency_minor_unit",
             "description": "ISO 4217 currency number of minor units",
-            "min": 0.0,
-            "max": 3.0,
-            "50%": 2.0,
-            "25%": 2.0,
-            "std": 0.6973399729007982,
-            "75%": 2.0,
-            "type": "number",
-            "mean": 1.7755102040816326
+            "type": "string"
           },
           {
             "index": 17,
@@ -136,17 +120,9 @@
           },
           {
             "index": 18,
-            "count": 245.0,
             "name": "currency_numeric_code",
             "description": "ISO 4217 currency numeric code",
-            "min": 8.0,
-            "max": 986.0,
-            "50%": 752.0,
-            "25%": 388.0,
-            "std": 323.28437893299815,
-            "75%": 951.0,
-            "type": "number",
-            "mean": 640.2734693877551
+            "type": "string"
           },
           {
             "index": 19,
