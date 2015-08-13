@@ -4,6 +4,34 @@ Format Data Package.
 
 ## Data
 
+###Structure
+Main data comes in three sheets or tables: central, general and merged (see notes for description). Each is organized into country-year records with multiple variables. Included is a field dictionary for the entire dataset: var_list.
+
+###Included variables
+
+* **name** - English spelling of name *(string)*
+* **name_fr** - French spelling of name *(string)*
+* **ISO3166-1-Alpha-2** - [ISO 3166-1 alpha-2](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2) country ID *(string)*
+* **ISO3166-1-Alpha-3** - [ISO 3166-1 alpha-3](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-3) *(string)*
+* **ISO3166-1-numeric** - [ISO 3166-1 numeric](https://en.wikipedia.org/wiki/ISO_3166-1_numeric) *(sting/int)*
+* **ITU** - ITU-T Recommendation E.164 assigned country code *(string)*
+* **MARC** - MARC 21 two letter country code *(string)*
+* **WMO** - World Meteorological two letter country codes *(string)*
+* **DS** - Distinguishing signs of vehicles in international traffic (oval bumper sticker codes) *(string)*
+* **Dial** - Country code from ITU-T recommendation E.164 (international dialing code), sometimes followed by area code *(string/int)*
+* **FIFA** - Codes assigned by the [Fédération Internationale de Football Association](http://www.fifa.com/en/organisation/na/index.html) *(string)*
+* **FIPS** -  *()*
+* **GAUL** - Global Administrative Unit Layers from the Food and Agriculture Organization *(int)*
+* **IOC** - Codes assigned by the [International Olympics Committee](http://www.olympic.org/uk/organisation/noc/index_uk.asp). These codes identify the nationality of athletes and teams during Olympic events *()*
+* **currency_alphabetic_code** - [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) three letter code *(string)*
+* **currency_country_name** - [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) country string name *(string)*
+* **currency_minor_unit** - [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) minor unit *(int)*
+* **currency_name** - [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) currency string name *(string)*
+* **currency_numeric_code** - [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) numeric code *(int)*
+* **is_independent** - Country status, based on the CIA World Factbook. This column is just a superficial note, provided for convenience. I don't care to
+argue about it. For full details, please consult your favorite official source. *(string)*
+        
+### Notes from the Source
 Data comes from multiple sources as follows.
 
 ISO 3166 offical English and French short names are from
@@ -20,6 +48,7 @@ Special thanks to Gwillim Law for his excellent
 [statoids.com](http://www.statoids.com) site (some of the field descriptions
 are excerpted from his site), which is more up-to-date than most similar
 resources and is much easier to scrape than multiple Wikipedia pages.
+
 
 ## Preparation
 
